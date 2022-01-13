@@ -1,0 +1,53 @@
+@import "variables";
+
+.bg_image {
+  background-image: url("../../assets/source.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: crimson;
+    font-size: 85px;
+    @media #{$lg-layout} {
+      font-size: 85px;
+      line-height: 90px;
+    }
+    @media #{$md-layout} {
+      font-size: 55px;
+      line-height: 75px;
+    }
+    @media #{$sm-layout} {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+  button {
+    transition-duration: 0.4s;
+    border: 2px solid crimson;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 45px;
+    @media #{$lg-layout} {
+      font-size: 45px;
+    }
+    @media #{$md-layout} {
+      font-size: 35px;
+    }
+    @media #{$sm-layout} {
+      font-size: 25px;
+    }
+  }
+
+  button:hover {
+    background-color: crimson; /* Green */
+    color: white;
+    border-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}
